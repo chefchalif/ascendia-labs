@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Simon Peinture</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home / Accueil</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Request a Free Quote / Demander un devis gratuit</h2>
+        <form action="submit_quote.php" method="POST">
+            <label for="name">Name / Nom:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email / Courriel:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message / Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Submit / Envoyer</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Simon Peinture. All rights reserved.</p>
+    </footer>
+</body>
+</html>
