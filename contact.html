@@ -1,36 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta Tags for SEO -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Simon Peinture</title>
+    <title>Contact Us | Simon Peinture</title>
+    <meta name="description" content="Contact Simon Peinture for professional painting and interior design services in Montreal. Get a free estimate today!">
+    <meta name="keywords" content="painting contractor Montreal, contact, free estimate">
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="styles.css">
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="index.html">Home / Accueil</a>
-        </nav>
-    </header>
+    <!-- Header with Language Switcher -->
+    <!-- Same as in index.html -->
+    <!-- ... -->
 
-    <main>
-        <h2>Request a Free Quote / Demander un devis gratuit</h2>
-        <form action="submit_quote.php" method="POST">
-            <label for="name">Name / Nom:</label>
+    <!-- Contact Form Section -->
+    <section class="contact-form">
+        <h2 data-key="contact-form-title">Contact Us</h2>
+        <p data-key="contact-form-subtitle">Please fill out the form below, and we'll get back to you shortly.</p>
+        <form action="https://formspree.io/f/your-form-id" method="POST" enctype="multipart/form-data">
+            <label for="name" data-key="form-name">Name / Nom:</label>
             <input type="text" id="name" name="name" required>
 
-            <label for="email">Email / Courriel:</label>
+            <label for="email" data-key="form-email">Email:</label>
             <input type="email" id="email" name="email" required>
 
-            <label for="message">Message / Message:</label>
+            <label for="phone" data-key="form-phone">Phone Number / Numéro de téléphone:</label>
+            <input type="tel" id="phone" name="phone">
+
+            <label for="message" data-key="form-message">Project Description / Description du projet:</label>
             <textarea id="message" name="message" required></textarea>
 
-            <button type="submit">Submit / Envoyer</button>
-        </form>
-    </main>
+            <label for="file" data-key="form-upload">Upload Photos (Optional):</label>
+            <input type="file" id="file" name="file" accept="image/*">
 
-    <footer>
-        <p>&copy; 2024 Simon Peinture. All rights reserved.</p>
-    </footer>
+            <button type="submit" data-key="form-submit">Submit Request</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <!-- Same as in index.html -->
+    <!-- ... -->
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
