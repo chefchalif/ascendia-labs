@@ -7,19 +7,20 @@ const translations = {
         'nav-home': 'Home',
         'nav-services': 'Services',
         'nav-gallery': 'Gallery',
+        'nav-testimonials': 'Testimonials',
         'nav-contact': 'Contact',
         // Hero Section
         'hero-title': 'Professional Painting Services in Montreal',
         'hero-subtitle': 'High-quality interior and exterior painting and design consultation.',
-        'hero-cta': 'Request your free estimate today!',
+        'hero-cta': 'Request Your Free Estimate Today!',
         // Services Section
         'services-title': 'Our Services',
         'service1-title': 'Interior Painting',
-        'service1-desc': 'High-quality interior painting to refresh your living spaces.',
+        'service1-desc': 'Transform your living spaces with our professional interior painting services.',
         'service2-title': 'Exterior Painting',
-        'service2-desc': 'Durable exterior painting for lasting curb appeal.',
+        'service2-desc': 'Enhance your home\'s curb appeal with durable exterior painting.',
         'service3-title': 'Interior Design Consulting',
-        'service3-desc': 'Expert advice to create beautiful and functional spaces.',
+        'service3-desc': 'Get expert advice to create beautiful and functional spaces.',
         // Testimonials
         'testimonials-title': 'What Our Clients Say',
         'testimonial1': '"Simon and his team did an amazing job painting our home. Highly professional and great attention to detail!"',
@@ -30,26 +31,18 @@ const translations = {
         'contact-cta-button': 'Submit Request',
         // Footer
         'footer-address': 'Montreal, Quebec',
-        'footer-phone': 'Phone:',
         'footer-hours-title': 'Business Hours',
         'footer-hours': 'Mon - Fri: 8 AM - 6 PM',
         'footer-hours-sat': 'Sat: 9 AM - 4 PM',
         'footer-hours-sun': 'Sun: Closed',
         'footer-follow': 'Follow Us',
-        'contact-form-title': 'Contact Us',
-        'contact-form-subtitle': "Please fill out the form below, and we'll get back to you shortly.",
-        'form-name': 'Name / Nom:',
-        'form-email': 'Email:',
-        'form-phone': 'Phone Number / Numéro de téléphone:',
-        'form-message': 'Project Description / Description du projet:',
-        'form-upload': 'Upload Photos (Optional):',
-        'form-submit': 'Submit Request',
     },
     fr: {
         // Navigation
         'nav-home': 'Accueil',
         'nav-services': 'Services',
         'nav-gallery': 'Galerie',
+        'nav-testimonials': 'Témoignages',
         'nav-contact': 'Contact',
         // Hero Section
         'hero-title': 'Services de peinture professionnels à Montréal',
@@ -58,11 +51,11 @@ const translations = {
         // Services Section
         'services-title': 'Nos Services',
         'service1-title': 'Peinture Intérieure',
-        'service1-desc': 'Peinture intérieure de haute qualité pour rafraîchir vos espaces de vie.',
+        'service1-desc': 'Transformez vos espaces de vie avec nos services de peinture intérieure professionnelle.',
         'service2-title': 'Peinture Extérieure',
-        'service2-desc': 'Peinture extérieure durable pour un attrait durable.',
+        'service2-desc': "Améliorez l'attrait de votre maison avec une peinture extérieure durable.",
         'service3-title': "Conseil en Design d'Intérieur",
-        'service3-desc': "Conseils d'experts pour créer des espaces beaux et fonctionnels.",
+        'service3-desc': "Obtenez des conseils d'experts pour créer des espaces beaux et fonctionnels.",
         // Testimonials
         'testimonials-title': 'Ce que disent nos clients',
         'testimonial1': '"Simon et son équipe ont fait un travail incroyable en peignant notre maison. Très professionnels et une grande attention aux détails !"',
@@ -73,20 +66,11 @@ const translations = {
         'contact-cta-button': 'Envoyer une demande',
         // Footer
         'footer-address': 'Montréal, Québec',
-        'footer-phone': 'Téléphone :',
         'footer-hours-title': "Heures d'ouverture",
         'footer-hours': 'Lun - Ven : 8h - 18h',
         'footer-hours-sat': 'Sam : 9h - 16h',
         'footer-hours-sun': 'Dim : Fermé',
         'footer-follow': 'Suivez-nous',
-        'contact-form-title': 'Contactez-nous',
-        'contact-form-subtitle': 'Veuillez remplir le formulaire ci-dessous et nous vous contacterons sous peu.',
-        'form-name': 'Nom / Name :',
-        'form-email': 'Courriel :',
-        'form-phone': 'Numéro de téléphone / Phone Number :',
-        'form-message': 'Description du projet / Project Description :',
-        'form-upload': 'Télécharger des photos (Optionnel) :',
-        'form-submit': 'Envoyer une demande',
     }
 };
 

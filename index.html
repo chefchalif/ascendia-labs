@@ -4,132 +4,205 @@
     <!-- Meta Tags for SEO -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simon Peinture | Painting Contractor in Montreal</title>
+    <title>Simon Peinture | Professional Painting Services in Montreal</title>
     <meta name="description" content="Professional painting contractor and interior design consulting in Montreal. Request your free estimate today!">
     <meta name="keywords" content="painting contractor Montreal, residential painting services Montreal, interior design consultation Montreal">
-    <!-- Stylesheet -->
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="styles.css">
-    <!-- Font -->
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <!-- Favicon -->
-    <link rel="icon" href="images/favicon.ico">
+    <link rel="icon" href="assets/images/favicon.ico">
 </head>
 <body>
-    <!-- Header with Language Switcher -->
-    <header>
-        <div class="top-bar">
-            <div class="language-switcher">
-                <button onclick="switchLanguage('en')">EN</button> |
-                <button onclick="switchLanguage('fr')">FR</button>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/logo.png" alt="Simon Peinture" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" data-key="nav-home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services" data-key="nav-services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery" data-key="nav-gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials" data-key="nav-testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html" data-key="nav-contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-sm btn-outline-dark" onclick="switchLanguage('en')">EN</button>
+                        <button class="btn btn-sm btn-outline-dark" onclick="switchLanguage('fr')">FR</button>
+                    </li>
+                </ul>
             </div>
         </div>
-        <nav class="navbar">
-            <a href="index.html" class="logo">Simon Peinture</a>
-            <ul class="nav-menu">
-                <li><a href="index.html" data-key="nav-home">Home</a></li>
-                <li><a href="#services" data-key="nav-services">Services</a></li>
-                <li><a href="#gallery" data-key="nav-gallery">Gallery</a></li>
-                <li><a href="contact.html" data-key="nav-contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1 data-key="hero-title">Professional Painting Services in Montreal</h1>
-            <p data-key="hero-subtitle">High-quality interior and exterior painting and design consultation.</p>
-            <a href="contact.html" class="cta-button" data-key="hero-cta">Request your free estimate today!</a>
+    <header class="hero-section d-flex align-items-center" id="home">
+        <div class="container text-center">
+            <h1 class="display-4 text-white" data-key="hero-title">Professional Painting Services in Montreal</h1>
+            <p class="lead text-white mb-4" data-key="hero-subtitle">High-quality interior and exterior painting and design consultation.</p>
+            <a href="contact.html" class="btn btn-primary btn-lg" data-key="hero-cta">Request Your Free Estimate Today!</a>
         </div>
-    </section>
+    </header>
 
     <!-- Services Section -->
-    <section id="services" class="services">
-        <h2 data-key="services-title">Our Services</h2>
-        <div class="service-items">
-            <!-- Service Item 1 -->
-            <div class="service-item">
-                <img src="images/interior-painting.jpg" alt="Interior Painting" />
-                <h3 data-key="service1-title">Interior Painting</h3>
-                <p data-key="service1-desc">High-quality interior painting to refresh your living spaces.</p>
-            </div>
-            <!-- Service Item 2 -->
-            <div class="service-item">
-                <img src="images/exterior-painting.jpg" alt="Exterior Painting" />
-                <h3 data-key="service2-title">Exterior Painting</h3>
-                <p data-key="service2-desc">Durable exterior painting for lasting curb appeal.</p>
-            </div>
-            <!-- Service Item 3 -->
-            <div class="service-item">
-                <img src="images/design-consulting.jpg" alt="Interior Design Consulting" />
-                <h3 data-key="service3-title">Interior Design Consulting</h3>
-                <p data-key="service3-desc">Expert advice to create beautiful and functional spaces.</p>
+    <section class="py-5" id="services">
+        <div class="container">
+            <h2 class="text-center mb-5" data-key="services-title">Our Services</h2>
+            <div class="row g-4">
+                <!-- Service 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100 text-center">
+                        <img src="assets/images/service1.jpg" class="card-img-top" alt="Interior Painting">
+                        <div class="card-body">
+                            <h5 class="card-title" data-key="service1-title">Interior Painting</h5>
+                            <p class="card-text" data-key="service1-desc">Transform your living spaces with our professional interior painting services.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service 2 -->
+                <div class="col-md-4">
+                    <div class="card h-100 text-center">
+                        <img src="assets/images/service2.jpg" class="card-img-top" alt="Exterior Painting">
+                        <div class="card-body">
+                            <h5 class="card-title" data-key="service2-title">Exterior Painting</h5>
+                            <p class="card-text" data-key="service2-desc">Enhance your home's curb appeal with durable exterior painting.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service 3 -->
+                <div class="col-md-4">
+                    <div class="card h-100 text-center">
+                        <img src="assets/images/service3.jpg" class="card-img-top" alt="Interior Design Consulting">
+                        <div class="card-body">
+                            <h5 class="card-title" data-key="service3-title">Interior Design Consulting</h5>
+                            <p class="card-text" data-key="service3-desc">Get expert advice to create beautiful and functional spaces.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Testimonials Section -->
-    <section class="testimonials">
-        <h2 data-key="testimonials-title">What Our Clients Say</h2>
-        <div class="testimonial-carousel">
-            <div class="testimonial-item">
-                <p data-key="testimonial1">"Simon and his team did an amazing job painting our home. Highly professional and great attention to detail!"</p>
-                <h4>– John D.</h4>
+    <section class="bg-light py-5" id="testimonials">
+        <div class="container">
+            <h2 class="text-center mb-5" data-key="testimonials-title">What Our Clients Say</h2>
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- Testimonial 1 -->
+                    <div class="carousel-item active">
+                        <div class="testimonial text-center">
+                            <p class="lead" data-key="testimonial1">"Simon and his team did an amazing job painting our home. Highly professional and great attention to detail!"</p>
+                            <h5>– John D.</h5>
+                        </div>
+                    </div>
+                    <!-- Additional testimonials can be added here -->
+                </div>
+                <!-- Carousel controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
             </div>
-            <!-- Add more testimonials as needed -->
         </div>
     </section>
 
     <!-- Gallery Section -->
-    <section id="gallery" class="gallery">
-        <h2 data-key="gallery-title">Our Work</h2>
-        <div class="gallery-items">
-            <!-- Gallery Item 1 -->
-            <img src="images/gallery1.jpg" alt="Project 1" />
-            <!-- Gallery Item 2 -->
-            <img src="images/gallery2.jpg" alt="Project 2" />
-            <!-- Gallery Item 3 -->
-            <img src="images/gallery3.jpg" alt="Project 3" />
-            <!-- Add more gallery images as needed -->
+    <section class="py-5" id="gallery">
+        <div class="container">
+            <h2 class="text-center mb-5" data-key="gallery-title">Our Work</h2>
+            <div class="row g-4">
+                <!-- Gallery Item 1 -->
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="assets/images/gallery1.jpg" class="img-fluid" alt="Project 1">
+                    </div>
+                </div>
+                <!-- Gallery Item 2 -->
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="assets/images/gallery2.jpg" class="img-fluid" alt="Project 2">
+                    </div>
+                </div>
+                <!-- Gallery Item 3 -->
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="assets/images/gallery3.jpg" class="img-fluid" alt="Project 3">
+                    </div>
+                </div>
+                <!-- Additional gallery items can be added here -->
+            </div>
         </div>
     </section>
 
     <!-- Contact CTA Section -->
-    <section class="contact-cta">
-        <h2 data-key="contact-cta-title">Ready to Start Your Project?</h2>
-        <a href="contact.html" class="cta-button" data-key="contact-cta-button">Submit Request</a>
+    <section class="cta-section text-white text-center py-5" id="contact-cta">
+        <div class="container">
+            <h2 class="mb-4" data-key="contact-cta-title">Ready to Start Your Project?</h2>
+            <a href="contact.html" class="btn btn-lg btn-light" data-key="contact-cta-button">Submit Request</a>
+        </div>
     </section>
 
     <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Simon Peinture</h3>
-                <p data-key="footer-address">Montreal, Quebec</p>
-                <p data-key="footer-phone">Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
-                <p>Email: <a href="mailto:info@simonpeinture.ca">info@simonpeinture.ca</a></p>
-            </div>
-            <div class="footer-section">
-                <h4 data-key="footer-hours-title">Business Hours</h4>
-                <p data-key="footer-hours">Mon - Fri: 8 AM - 6 PM</p>
-                <p data-key="footer-hours-sat">Sat: 9 AM - 4 PM</p>
-                <p data-key="footer-hours-sun">Sun: Closed</p>
-            </div>
-            <div class="footer-section">
-                <h4 data-key="footer-follow">Follow Us</h4>
-                <div class="social-media">
-                    <a href="#" aria-label="Facebook"><img src="images/facebook-icon.png" alt="Facebook" /></a>
-                    <a href="#" aria-label="Instagram"><img src="images/instagram-icon.png" alt="Instagram" /></a>
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container text-center text-md-start">
+            <div class="row text-center text-md-start">
+                <!-- About -->
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold">Simon Peinture</h5>
+                    <p data-key="footer-address">Montreal, Quebec</p>
+                    <p><i class="fas fa-phone-alt"></i> <a href="tel:+1234567890" class="text-white">+1 (234) 567-890</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:info@simonpeinture.ca" class="text-white">info@simonpeinture.ca</a></p>
+                </div>
+                <!-- Business Hours -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold" data-key="footer-hours-title">Business Hours</h5>
+                    <p data-key="footer-hours">Mon - Fri: 8 AM - 6 PM</p>
+                    <p data-key="footer-hours-sat">Sat: 9 AM - 4 PM</p>
+                    <p data-key="footer-hours-sun">Sun: Closed</p>
+                </div>
+                <!-- Social Media -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold" data-key="footer-follow">Follow Us</h5>
+                    <a href="#" class="btn btn-outline-light btn-floating m-1"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="btn btn-outline-light btn-floating m-1"><i class="fab fa-instagram"></i></a>
                     <!-- Add other social media icons as needed -->
                 </div>
             </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2023 Simon Peinture. All rights reserved.</p>
+            <hr class="mb-4">
+            <div class="row align-items-center">
+                <div class="col-md-7 col-lg-8">
+                    <p>&copy; 2023 Simon Peinture. All rights reserved.</p>
+                </div>
+            </div>
         </div>
     </footer>
 
-    <!-- JavaScript -->
+    <!-- JavaScript Files -->
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
