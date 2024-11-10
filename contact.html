@@ -3,56 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <title>Contact Us | Envision AI Solutions</title>
-    <link rel="stylesheet" href="styles.css">
-    <!-- Google Fonts and Font Awesome -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Open+Sans:400,600&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
     <!-- Navigation Bar -->
-    <nav>
-        <div class="logo">
-            <a href="index.html">Envision AI Solutions</a>
-        </div>
-        <input type="checkbox" id="menu-toggle">
-        <label for="menu-toggle" class="menu-icon"><i class="fas fa-bars"></i></label>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="case-studies.html">Case Studies</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html" class="cta-button active">Contact</a></li>
-        </ul>
-    </nav>
+    <header>
+        <nav class="navbar container">
+            <div class="logo">
+                <a href="index.html">Envision AI Solutions</a>
+            </div>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="case-studies.html">Case Studies</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html" class="btn-nav active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <!-- Contact Section -->
-    <section class="contact-section">
-        <h1>Contact Us</h1>
-        <form action="#" method="post" class="contact-form">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <input type="text" name="business" placeholder="Business Name">
-            <select name="services" required>
-                <option value="" disabled selected>Services Interested In</option>
-                <option value="ai-integration">AI Integration</option>
-                <option value="vr-ar">VR/AR Solutions</option>
-                <option value="seo">Website & SEO Optimization</option>
-                <option value="other">Other</option>
-            </select>
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit" class="btn primary-btn">Submit Your Inquiry</button>
-        </form>
+    <main>
+        <section class="contact-page container">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you. Please fill out the form below, and we'll get back to you shortly.</p>
 
-        <!-- Contact Details -->
-        <div class="contact-details">
-            <p><i class="fas fa-envelope"></i> Email: <a href="mailto:info@envisionaisolutions.com">info@envisionaisolutions.com</a></p>
-            <p><i class="fas fa-phone"></i> Phone: +1 (555) 123-4567</p>
-            <!-- If you have a physical location, you can include an embedded map here -->
-        </div>
-    </section>
+            <!-- Contact Form -->
+            <form action="#" method="post" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Your Name <span>*</span></label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Your Email <span>*</span></label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="business">Business Name</label>
+                    <input type="text" id="business" name="business" placeholder="Enter your business name">
+                </div>
+
+                <div class="form-group">
+                    <label for="services">Services Interested In <span>*</span></label>
+                    <select id="services" name="services" required>
+                        <option value="" disabled selected>Select a service</option>
+                        <option value="ai-integration">AI Integration</option>
+                        <option value="vr-ar">VR/AR Solutions</option>
+                        <option value="seo">Website & SEO Optimization</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Your Message <span>*</span></label>
+                    <textarea id="message" name="message" rows="6" placeholder="Type your message here" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit Your Inquiry</button>
+            </form>
+
+            <!-- Contact Details -->
+            <section class="contact-details">
+                <h2>Direct Contact</h2>
+                <p><strong>Email:</strong> <a href="mailto:info@envisionaisolutions.com">info@envisionaisolutions.com</a></p>
+                <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+                <!-- If you have a physical location, include it here -->
+                <!-- <p><strong>Address:</strong> 1234 Innovation Drive, Montreal, QC, Canada</p> -->
+            </section>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2023 Envision AI Solutions. All rights reserved.</p>
+        <div class="footer-content container">
+            <p>&copy; 2023 Envision AI Solutions. All rights reserved.</p>
+        </div>
     </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
