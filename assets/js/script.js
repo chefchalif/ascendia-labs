@@ -1,11 +1,82 @@
-// Smooth Scroll for Anchor Links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Envision AI Solutions | Services</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar container">
+            <div class="logo">
+                <a href="index.html">Envision AI Solutions</a>
+            </div>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="case-studies.html">Case Studies</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html" class="btn-nav">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-// Placeholder for additional JavaScript functionality
+    <!-- Services Section -->
+    <section class="services-page container">
+        <h1>Our Services</h1>
+
+        <!-- AI Integration -->
+        <div class="service-section">
+            <h2 id="ai-integration">Empower Your Business with AI</h2>
+            <p>Leverage AI for automation, analytics, and smarter decision-making.</p>
+            <ul>
+                <li><strong>Chatbot Development:</strong> Design AI chatbots for enhanced customer service.</li>
+                <li><strong>Data Analytics and Predictive Insights:</strong> Utilize AI to interpret complex data.</li>
+                <li><strong>Sentiment Analysis:</strong> Understand customer sentiments and trends.</li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary">Request a Demo</a>
+        </div>
+
+        <!-- VR/AR Solutions -->
+        <div class="service-section">
+            <h2 id="vr-ar">Revolutionize Real Estate with VR and AR</h2>
+            <p>Enhance real estate marketing with immersive technologies.</p>
+            <ul>
+                <li><strong>Virtual Property Tours:</strong> Offer clients a virtual walkthrough experience.</li>
+                <li><strong>AR Staging and Visualization:</strong> Transform empty spaces with AR.</li>
+                <li><strong>Neighborhood Guides:</strong> Provide insights about local areas using AR.</li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary">Schedule a VR/AR Consultation</a>
+        </div>
+
+        <!-- Website & SEO Optimization -->
+        <div class="service-section">
+            <h2 id="seo">Enhance Your Digital Presence</h2>
+            <p>Optimize your website and improve your search engine rankings.</p>
+            <ul>
+                <li><strong>Website Creation:</strong> Develop modern, responsive websites.</li>
+                <li><strong>SEO Optimization:</strong> Increase your visibility on search engines.</li>
+                <li><strong>Ads Management:</strong> Manage and optimize your online advertising campaigns.</li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary">Contact Us to Get Started</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content container">
+            <p>&copy; 2023 Envision AI Solutions. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
