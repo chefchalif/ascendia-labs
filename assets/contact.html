@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us | Envision AI Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts and Font Awesome -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Open+Sans:400,600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <a href="index.html">Envision AI Solutions</a>
+        </div>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon"><i class="fas fa-bars"></i></label>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="case-studies.html">Case Studies</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html" class="cta-button active">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <h1>Contact Us</h1>
+        <form action="#" method="post" class="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="text" name="business" placeholder="Business Name">
+            <select name="services" required>
+                <option value="" disabled selected>Services Interested In</option>
+                <option value="ai-integration">AI Integration</option>
+                <option value="vr-ar">VR/AR Solutions</option>
+                <option value="seo">Website & SEO Optimization</option>
+                <option value="other">Other</option>
+            </select>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn primary-btn">Submit Your Inquiry</button>
+        </form>
+
+        <!-- Contact Details -->
+        <div class="contact-details">
+            <p><i class="fas fa-envelope"></i> Email: <a href="mailto:info@envisionaisolutions.com">info@envisionaisolutions.com</a></p>
+            <p><i class="fas fa-phone"></i> Phone: +1 (555) 123-4567</p>
+            <!-- If you have a physical location, you can include an embedded map here -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Envision AI Solutions. All rights reserved.</p>
+    </footer>
+</body>
+</html>
