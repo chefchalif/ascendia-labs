@@ -3,53 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <title>Case Studies | Envision AI Solutions</title>
-    <link rel="stylesheet" href="styles.css">
-    <!-- Google Fonts and Font Awesome -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Open+Sans:400,600&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
     <!-- Navigation Bar -->
-    <nav>
-        <div class="logo">
-            <a href="index.html">Envision AI Solutions</a>
-        </div>
-        <input type="checkbox" id="menu-toggle">
-        <label for="menu-toggle" class="menu-icon"><i class="fas fa-bars"></i></label>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="case-studies.html" class="active">Case Studies</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html" class="cta-button">Contact</a></li>
-        </ul>
-    </nav>
+    <header>
+        <nav class="navbar container">
+            <div class="logo">
+                <a href="index.html">Envision AI Solutions</a>
+            </div>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="case-studies.html" class="active">Case Studies</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html" class="btn-nav">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <!-- Case Studies Section -->
-    <section class="case-studies-section">
-        <h1>Real Results with Cutting-Edge Technology</h1>
+    <main>
+        <section class="case-studies-page container">
+            <h1>Real Results with Cutting-Edge Technology</h1>
 
-        <!-- Case Study 1 -->
-        <div class="case-study">
-            <h2>RealtyPro: AI Chatbot Implementation</h2>
-            <p><strong>Challenge:</strong> RealtyPro struggled with delayed customer responses.</p>
-            <p><strong>Solution:</strong> Implemented an AI chatbot to handle FAQs and schedule appointments.</p>
-            <p><strong>Results:</strong> Reduced response time by 70% and increased customer satisfaction.</p>
-        </div>
+            <!-- Case Study 1 -->
+            <article class="case-study">
+                <h2>RealtyPro: AI Chatbot Implementation</h2>
+                <p><strong>Challenge:</strong> RealtyPro struggled with delayed customer responses.</p>
+                <p><strong>Solution:</strong> Implemented an AI chatbot to handle FAQs and schedule appointments.</p>
+                <p><strong>Results:</strong> Reduced response time by 70% and increased customer satisfaction.</p>
+            </article>
 
-        <!-- Case Study 2 -->
-        <div class="case-study">
-            <h2>Urban Estates: VR Property Tours</h2>
-            <p><strong>Challenge:</strong> Difficulty in showcasing properties to remote clients.</p>
-            <p><strong>Solution:</strong> Developed immersive VR property tours accessible online.</p>
-            <p><strong>Results:</strong> Increased remote client engagement by 50%.</p>
-        </div>
+            <!-- Case Study 2 -->
+            <article class="case-study">
+                <h2>Urban Estates: VR Property Tours</h2>
+                <p><strong>Challenge:</strong> Difficulty in showcasing properties to remote clients.</p>
+                <p><strong>Solution:</strong> Developed immersive VR property tours accessible online.</p>
+                <p><strong>Results:</strong> Increased remote client engagement by 50%.</p>
+            </article>
 
-        <a href="contact.html" class="btn primary-btn">See How We Can Help Your Business</a>
-    </section>
+            <!-- Call to Action -->
+            <div class="case-studies-cta">
+                <a href="contact.html" class="btn btn-primary">See How We Can Help Your Business</a>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2023 Envision AI Solutions. All rights reserved.</p>
+        <div class="footer-content container">
+            <p>&copy; 2023 Envision AI Solutions. All rights reserved.</p>
+        </div>
     </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
