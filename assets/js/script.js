@@ -30,12 +30,13 @@ function isElementInViewport(el) {
     return rect.top <= (window.innerHeight || document.documentElement.clientHeight);
 }
 
+let counterAnimated = false;
+
 window.addEventListener('scroll', function() {
     const counterSection = document.querySelector('.ai-integration');
-    if (isElementInViewport(counterSection)) {
+    if (isElementInViewport(counterSection) && !counterAnimated) {
         animateCounter();
-        // Remove the event listener after animation starts
-        window.removeEventListener('scroll', arguments.callee);
+        counterAnimated = true;
     }
 });
 
