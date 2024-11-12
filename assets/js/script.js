@@ -14,25 +14,33 @@ function animateCounter() {
     const target = 200;
     let count = 0;
 
-    const counterInterval = setInterval(() => {
+    const speed = 2000 / target; // Total duration divided by target value
+
+    const updateCounter = () => {
         if (count < target) {
             count++;
             counter.innerText = count + '%';
+            setTimeout(updateCounter, speed);
         } else {
-            clearInterval(counterInterval);
+            counter.innerText = target + '%';
         }
-    }, 10);
+    };
+
+    updateCounter();
 }
 
 // Trigger Counter Animation on Scroll
 function isElementInViewport(el) {
     const rect = el.getBoundingClientRect();
-    return rect.top <= (window.innerHeight || document.documentElement.clientHeight);
+    return (
+        rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.bottom >= 0
+    );
 }
 
 let counterAnimated = false;
 
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
     const counterSection = document.querySelector('.ai-integration');
     if (isElementInViewport(counterSection) && !counterAnimated) {
         animateCounter();
