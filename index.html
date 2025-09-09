@@ -1,21 +1,88 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Buy Ecclara™ Filtered Showerhead</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<body style="display:flex;align-items:center;justify-content:center;height:100vh;margin:0;font-family:sans-serif;background:#f9fafb;">
-  
-  <div>
-    <h1 style="text-align:center;margin-bottom:20px;">Ecclara™ Filtered Showerhead</h1>
-    
-    <script async src="https://js.stripe.com/v3/buy-button.js"></script>
-    <stripe-buy-button
-      buy-button-id="buy_btn_1S5YKZAblRDmyr9Zc2COgTNp"
-      publishable-key="pk_live_51InSoVAblRDmyr9ZANKJ2cYcqcdVqQG7uXQCildZxDs3rqUHmU9pHXqXz5bbkKaqlTwLONP3hIdlPTOIVwCRoFtN00sOv7Gh7z">
-    </stripe-buy-button>
-  </div>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ecclara™ Filtered Showerhead</title>
 
+  <style>
+    :root{
+      /* Tweak this once and the whole page updates */
+      --brand: #3B82F6;         /* primary (blue-500) */
+      --text:  #0f172a;         /* slate-900 */
+      --muted: #475569;         /* slate-600 */
+      --bg:    #f8fafc;         /* slate-50 */
+      --card:  #ffffff;         /* white */
+      --radius: 14px;
+    }
+    html, body {
+      height: 100%;
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI",
+            Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+    }
+    .wrap {
+      min-height: 100%;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+    }
+    .card {
+      width: 100%;
+      max-width: 520px;
+      background: var(--card);
+      border-radius: var(--radius);
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+      padding: 28px 22px 26px;
+      text-align: center;
+      border: 1px solid rgba(15, 23, 42, 0.06);
+    }
+    h1 {
+      margin: 0 0 16px 0;
+      font-weight: 800;
+      letter-spacing: -0.015em;
+    }
+    .sub {
+      margin: 0 0 20px 0;
+      color: var(--muted);
+      font-size: 0.975rem;
+    }
+    /* Accent line under the title for a subtle brand touch */
+    .accent {
+      width: 64px;
+      height: 4px;
+      background: var(--brand);
+      border-radius: 999px;
+      margin: 10px auto 18px;
+    }
+    /* Optional: link color normalization if you ever add links */
+    a { color: var(--brand); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Stripe component sits full-width inside the card by default */
+    stripe-buy-button {
+      display: block;
+      margin: 0 auto;
+      max-width: 340px; /* keeps a nice proportion */
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Ecclara™ Filtered Showerhead</h1>
+      <div class="accent"></div>
+      <p class="sub">Premium build, 4 spray modes, and advanced filtration. Secure checkout below.</p>
+
+      <!-- Stripe Buy Button -->
+      <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+      <stripe-buy-button
+        buy-button-id="buy_btn_1S5YKZAblRDmyr9Zc2COgTNp"
+        publishable-key="pk_live_51InSoVAblRDmyr9ZANKJ2cYcqcdVqQG7uXQCildZxDs3rqUHmU9pHXqXz5bbkKaqlTwLONP3hIdlPTOIVwCRoFtN00sOv7Gh7z">
+      </stripe-buy-button>
+    </div>
+  </div>
 </body>
 </html>
